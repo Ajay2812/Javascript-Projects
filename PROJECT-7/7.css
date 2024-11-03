@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  font-family: "Playfair Display", serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #bbc6fa;
+}
+.container {
+    width: 700px;
+    background: #fff;
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+ 
+ 
+}
+.container h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.container h2::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  bottom: -10px;
+  position: absolute;
+  transform: translateX(-50%);
+  background: rgba(23, 124, 229);
+  left: 50%;
+  border-radius: 3px;
+}
+.container blockquote {
+  font-size: 26px;
+  min-height: 110px;
+}
+.container blockquote::before,
+.container blockquote::after {
+  content: '"';
+}
+
+.container span {
+  display: block;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+}
+.container span::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: rgb(23, 124, 229);
+  border-radius: 3px;
+  top: 50%;
+  left: -30px;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.btns button {
+  color: #fff;
+  background-color: rgb(23, 124, 229);
+  height: 50px;
+  width: 150px;
+  border: 1px solid rgb(23, 124, 229);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  cursor: pointer;
+}
+.btns button:nth-child(2) {
+  background: transparent;
+  color: #333;
+}
+.btns button img {
+  width: 20px;
+  margin-right: 10px;
+}
